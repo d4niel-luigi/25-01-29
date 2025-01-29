@@ -12,3 +12,10 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Phones {
+  id Int @id @default(autoincrement())
+  model String
+  brand String?
+  price Int
+}
